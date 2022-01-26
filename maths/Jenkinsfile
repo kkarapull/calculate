@@ -41,7 +41,7 @@ pipeline {
 	    // run Maven Build and upload the built artifact to Artifactory
             steps {
                 rtMavenRun (
-                    tool: "maven3.6", // Tool name from Jenkins configuration
+                    tool: "maven3.8", // Tool name from Jenkins configuration
                     pom: 'maths/pom.xml',
                     goals: 'clean install',
                     deployerId: "MAVEN_DEPLOYER",
