@@ -18,7 +18,7 @@ pipeline {
 		// specify Artifactory server
                 rtServer (
                     id: "ARTIFACTORY_SERVER",
-                    url: "http://127.0.0.1:8083/artifactory",
+                    url: "http://172.18.0.3:8083/artifactory",
 		    credentialsId: 'Admin.Artifactory'
                 )
 		// specify the repositories to be used for deploying the artifacts in the Artifactory
